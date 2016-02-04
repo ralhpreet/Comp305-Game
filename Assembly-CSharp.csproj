@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\_Scripts\FireBallController.cs" />
+     <Compile Include="Assets\_Scripts\HeartController.cs" />
      <Compile Include="Assets\_Scripts\IronManController.cs" />
      <Compile Include="Assets\_Scripts\SpaceController.cs" />
  <Reference Include="UnityEngine.UI">
