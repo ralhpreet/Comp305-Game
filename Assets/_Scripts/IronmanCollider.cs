@@ -7,6 +7,9 @@ public class IronmanCollider : MonoBehaviour {
     private AudioSource _fireBallSound;
     private AudioSource _heartSound;
 
+
+    //Public Instance Variables
+    public GameController gameController;
 	// Use this for initialization
 	void Start () {
         //Initialize the audioSources array
@@ -25,10 +28,12 @@ public class IronmanCollider : MonoBehaviour {
         if (ogo.gameObject.CompareTag("FireBall"))
         {
             this._fireBallSound.Play();
+            this.gameController.LivesValue -= 1;
         }
         if (ogo.gameObject.CompareTag("Heart"))
         {
             this._heartSound.Play();
+            this.gameController.ScoreValue += 100;
         }
     }
 }
