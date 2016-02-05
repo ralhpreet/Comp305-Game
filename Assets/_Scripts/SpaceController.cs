@@ -1,13 +1,26 @@
-﻿using UnityEngine;
+﻿/*
+ * Source File Name: SapceController.cs
+ * Author: Lovepreet Ralh
+ * Last Modified by: Lovepreet ralh
+ * Date Last Modified: 5th Feb,2016
+ * Program Description: Controls the speed of scrolling as well as the direction of scrolling 
+ * Revision History:version 1.0
+ * 
+ */
+
+using UnityEngine;
 using System.Collections;
 
 public class SpaceController : MonoBehaviour {
     //Public instance variables
+    // Fix the speed of scrolling
     public float speed = 5f;
+
     //Private Instace Variables
     private Vector2 _currentPosition;
-    Transform _transform;
-	// Use this for initialization
+    private Transform _transform;
+	
+    // Use this for initialization
 	void Start () {
         //Make a reference with transform component
 	    this._transform=gameObject.GetComponent<Transform>();
@@ -25,7 +38,9 @@ public class SpaceController : MonoBehaviour {
             this.Reset();
         }
 	}
-    void Reset()
+
+    //public method
+    public void Reset()
     {
         this._transform.position = new Vector2(480f, 0);
     }

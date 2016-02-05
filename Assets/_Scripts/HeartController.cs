@@ -1,4 +1,13 @@
-﻿using UnityEngine;
+﻿/*
+ * Source File Name: SapceController.cs
+ * Author: Lovepreet Ralh
+ * Last Modified by: Lovepreet ralh
+ * Date Last Modified: 5th Feb,2016
+ * Program Description: Controls the speed of heart as well as reset it everytime it goes off the screen
+ * Revision History:version 1.0
+ * 
+ */
+using UnityEngine;
 using System.Collections;
 
 public class HeartController : MonoBehaviour {
