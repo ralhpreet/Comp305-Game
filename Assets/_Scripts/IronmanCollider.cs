@@ -1,4 +1,13 @@
-﻿using UnityEngine;
+﻿/*
+ * Source File Name: IronManController.cs
+ * Author: Lovepreet Ralh
+ * Last Modified by: Lovepreet ralh
+ * Date Last Modified: 5th Feb,2016
+ * Program Description: Controls the speed of scrolling as well as the direction of scrolling 
+ * Revision History:version 1.1
+ * 
+ */
+using UnityEngine;
 using System.Collections;
 
 public class IronmanCollider : MonoBehaviour {
@@ -23,14 +32,16 @@ public class IronmanCollider : MonoBehaviour {
 	
 	}
 
-    public void OnTriggerEnter2D(Collider2D ogo)
-    {
-        if (ogo.gameObject.CompareTag("FireBall"))
+    public void OnTriggerEnter2D(Collider2D otherGameObject)
+    {   
+        //Play the fireball sound if Ironman collides with fireball
+        if (otherGameObject.gameObject.CompareTag("FireBall"))
         {
             this._fireBallSound.Play();
             this.gameController.LivesValue -= 1;
         }
-        if (ogo.gameObject.CompareTag("Heart"))
+        //Play the heart sound if Ironman collides with fireball
+        if (otherGameObject.gameObject.CompareTag("Heart"))
         {
             this._heartSound.Play();
             this.gameController.ScoreValue += 100;

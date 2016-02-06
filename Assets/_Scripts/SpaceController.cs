@@ -4,7 +4,7 @@
  * Last Modified by: Lovepreet ralh
  * Date Last Modified: 5th Feb,2016
  * Program Description: Controls the speed of scrolling as well as the direction of scrolling 
- * Revision History:version 1.0
+ * Revision History:version 1.1
  * 
  */
 

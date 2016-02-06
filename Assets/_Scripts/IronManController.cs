@@ -1,10 +1,10 @@
 ﻿/*
- * Source File Name: SapceController.cs
+ * Source File Name: IronManController.cs
  * Author: Lovepreet Ralh
  * Last Modified by: Lovepreet ralh
  * Date Last Modified: 5th Feb,2016
  * Program Description: Controls the speed of Ironman(player) as well as allow it to move up down, backward and forward
- * Revision History:version 1.0
+ * Revision History:version 1.1
  * 
  */
 using UnityEngine;

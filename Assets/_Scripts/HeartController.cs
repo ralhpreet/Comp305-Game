@@ -1,10 +1,10 @@
 ﻿/*
- * Source File Name: SapceController.cs
+ * Source File Name: HeartController.cs
  * Author: Lovepreet Ralh
  * Last Modified by: Lovepreet ralh
  * Date Last Modified: 5th Feb,2016
  * Program Description: Controls the speed of heart as well as reset it everytime it goes off the screen
- * Revision History:version 1.0
+ * Revision History:version 1.1
  * 
  */
 using UnityEngine;

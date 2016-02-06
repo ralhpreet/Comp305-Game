@@ -1,10 +1,10 @@
 ﻿/*
- * Source File Name: SapceController.cs
+ * Source File Name: GameController.cs
  * Author: Lovepreet Ralh
  * Last Modified by: Lovepreet ralh
  * Date Last Modified: 5th Feb,2016
  * Program Description: Controls the speed of scrolling as well as the direction of scrolling 
- * Revision History:version 1.0
+ * Revision History:version 1.1
  * 
  */
 
@@ -30,10 +30,7 @@ public class GameController : MonoBehaviour {
         {
             this._scoreValue = value;
             this.Scorelabel.text="Score:"+this._scoreValue;
-            if (this._scoreValue >= 300)
-            {
-                Instantiate(monster.gameObject);
-            }
+            
         }
     }
 
@@ -70,7 +67,7 @@ public class GameController : MonoBehaviour {
     public Text GameOverLabel;
     public Text HighscoreLabel;
     public Button RestartButton;
-    public MonsterController monster;
+    //public MonsterController monster;
     
 
 	// Use this for initialization
@@ -98,8 +95,10 @@ public class GameController : MonoBehaviour {
         {
             Instantiate(fireBalls.gameObject);
         }
+      
     }
-
+    
+    //set highscores,restart button on and, lives and scores off on game over
     private void _endGame()
     {
         this.HighscoreLabel.text = "High Score:" + this._scoreValue;
